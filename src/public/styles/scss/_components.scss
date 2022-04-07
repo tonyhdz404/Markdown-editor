@@ -1,0 +1,40 @@
+.btn-save {
+  background-color: var(--dark-orange);
+  width: 15.2rem;
+  height: 4rem;
+  border-radius: 4px;
+  border: none;
+  color: var(--white) !important;
+  padding: 1rem 1.617rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    background-color: var(--light-orange);
+  }
+}
+
+.btn-sidebar {
+  background-color: var(--black-4);
+  height: 7.2rem;
+  width: 7.2rem;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-rename {
+  background-color: gainsboro;
+  height: 100%;
+  width: 35rem;
+
+  &__form {
+    &-label {
+        
+    }
+    &-input {
+    }
+  }
+}

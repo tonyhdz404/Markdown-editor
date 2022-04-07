@@ -1,0 +1,19 @@
+{
+  "name": "in-browser-markdown-editor",
+  "version": "1.0.0",
+  "description": "A in browser markdown CRUD editor",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Tony Hernandez",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

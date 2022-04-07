@@ -2,8 +2,21 @@
   background-color: var(--black-3);
   width: 100%;
   height: 7.2rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 1.6rem;
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+  &__delete {
+    margin-right: 2.4rem;
+    cursor: pointer;
+  }
+  &__icon {
+    margin: 0 3.015rem 0 2.475rem;
+  }
   &__divider {
     background-color: var(--grey-1);
     width: 1px;

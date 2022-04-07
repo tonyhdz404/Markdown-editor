@@ -10,9 +10,11 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <script defer src="/javascript/index.js"></script>
     <title>Markkdown</title>
   </head>
   <body>
-    <%- include("../partials/nav.ejs") %> <%-body%>
+    <%- include("../partials/_sidebar.ejs") %> <%-
+    include("../partials/_nav.ejs") %> <%-body%>
   </body>
 </html>

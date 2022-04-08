@@ -6,9 +6,7 @@ const expressLayouts = require("express-ejs-layouts");
 
 //* Connecting to MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://hernanto:UeEIXipkmDeTOZv7@cluster0.2bkgu.mongodb.net/markdownDB?retryWrites=true&w=majority"
-  )
+  .connect("<%CONNECTION_STRING%>")
   .then(() => console.log("Mongoose Connected 🍏"))
   .catch((err) => console.error("ERROR 🍎"));
 

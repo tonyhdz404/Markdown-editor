@@ -1,0 +1,49 @@
+.display {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1.1px 1fr;
+  height: 100%;
+  grid-row: 2/3;
+  &__divider {
+    background-color: var(--grey-4);
+  }
+}
+
+.markdown {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    resize: none;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0.9rem 1.6rem;
+    border: none;
+    outline: transparent;
+  }
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+  &__output {
+    width: 100%;
+    flex-grow: 1;
+  }
+  &__icon-show {
+    cursor: pointer;
+  }
+}
+
+.section {
+  &__title {
+    background-color: var(--offwhite);
+    height: 4.2rem;
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      text-transform: uppercase;
+      color: var(--grey-2) !important;
+    }
+  }
+}

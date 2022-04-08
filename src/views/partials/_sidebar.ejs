@@ -2,6 +2,8 @@
   <p class="in-app-heading-s sidebar__header">MY DOCUMENTS</p>
   <button class="in-app-heading-m btn-iconless">+ New Document</button>
   <div class="sidebar__tile-list">
+    <% data.forEach(doc => { %>
+
     <div class="sidebar__tile">
       <img
         class="sidebar__tile-icon"
@@ -9,9 +11,17 @@
         alt="icon-document"
       />
       <div class="sidebar__tile-content">
-        <span class="in-app-body-s sidebar__tile-date">01 April 2022</span>
-        <a href="#" class="in-app-heading-m sidebar__tile-name">welcome.md</a>
+        <span class="in-app-body-s sidebar__tile-date"
+          ><%- doc.createdAt %>
+        </span>
+        <a
+          href="http://localhost:1337/documents/<%- doc.id%>"
+          class="in-app-heading-m sidebar__tile-name"
+          ><%- doc.name%></a
+        >
       </div>
     </div>
+
+    <% }) %>
   </div>
 </aside>

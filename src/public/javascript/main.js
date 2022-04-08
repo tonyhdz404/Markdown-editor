@@ -1,6 +1,7 @@
 const navbar = document.querySelector(".nav");
 const sidebar = document.querySelector(".sidebar");
 const body = document.querySelector("body");
+const displayContainer = document.querySelector(".display");
 
 //* Functions
 function toggleSidebar(e) {
@@ -21,12 +22,14 @@ function openSidebar(btn) {
   btnIcon.src = "/assets/icon-close.svg";
   sidebar.classList.remove("hidden");
   body.style.gridTemplateColumns = "25rem 1fr";
+  displayContainer.style.gridTemplateColumns = "1fr 1.1px .5fr";
 }
 function closeSidbar(btn) {
   const btnIcon = btn.querySelector("img");
   btnIcon.src = "/assets/icon-menu.svg";
   sidebar.classList.add("hidden");
   body.style.gridTemplateColumns = "0px 1fr";
+  displayContainer.style.gridTemplateColumns = "1fr 1.1px 1fr";
 }
 //* EventListeners
 
